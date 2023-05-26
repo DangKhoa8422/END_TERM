@@ -13,7 +13,6 @@ face_cascade.load('haarcascade_frontalface_default.xml')
 model_gender = tf.keras.models.load_model('gioitinh.h5', compile=False)
 model_age = tf.keras.models.load_model('AGE.h5', compile=False)
 def show(event):
-    global roi
     invite.configure(text = '', font = ('Time',16), width = 10)
     file_path = address.get()
     img = Image.open(file_path)
